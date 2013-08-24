@@ -1,0 +1,390 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:12px;
+    vertical-align:baseline;
+    background:transparent;
+    font-family: Segoe UI,Arial,Geneva,sans-serif;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section { 
+    display:block;
+	width: 100%;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:13px;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000; 
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;   
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+#header,
+.header
+{
+	height:45px;
+    background-color: #444444;
+}
+
+#header img{
+    margin-top: 10px;
+    margin-left: 16px;
+	height: 80%;
+}
+
+#navigator{
+    float: left;
+    width: 100%;
+    height: 22px;
+    padding-top: 5px;
+    padding-bottom: 13px;
+    background-image: linear-gradient(bottom, rgb(19,19,19) 8%, rgb(67,67,67) 100%);
+    background-image: -o-linear-gradient(bottom, rgb(19,19,19) 8%, rgb(67,67,67) 100%);
+    background-image: -moz-linear-gradient(bottom, rgb(19,19,19) 8%, rgb(67,67,67) 100%);
+    background-image: -webkit-linear-gradient(bottom, rgb(19,19,19) 8%, rgb(67,67,67) 100%);
+    background-image: -ms-linear-gradient(bottom, rgb(19,19,19) 8%, rgb(67,67,67) 100%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.08, rgb(19,19,19)),
+        color-stop(1, rgb(67,67,67))
+    );
+    border-top: 1px solid #555555;
+}
+
+#navigator input{
+    height: 20px;
+    border-radius: 10px;
+    background: #535353;
+    color: #757474;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #000000;
+    width: 100%;
+}
+
+.btn_cat{
+    width: 36px;
+    height: 32px;
+    margin-top: 9px;
+}
+
+.btn_search{
+    color: #1a6600;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #b9ff73;
+	border-radius: 10px;
+	height: 20px;
+	padding: 0 8px 0 8px;
+	font-size: 12px;
+	padding-top: 7px;
+	border: 1px solid #000000;
+	margin-top: 6px;
+	ackground-image: linear-gradient(bottom, rgb(93,180,0) 5%, rgb(158,215,0) 82%);
+	background-image: -o-linear-gradient(bottom, rgb(93,180,0) 5%, rgb(158,215,0) 82%);
+	background-image: -moz-linear-gradient(bottom, rgb(93,180,0) 5%, rgb(158,215,0) 82%);
+	background-image: -webkit-linear-gradient(bottom, rgb(93,180,0) 5%, rgb(158,215,0) 82%);
+	background-image: -ms-linear-gradient(bottom, rgb(93,180,0) 5%, rgb(158,215,0) 82%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.05, rgb(93,180,0)), color-stop(0.82, rgb(158,215,0)) );
+}
+
+#contentwrapper{
+    float: left;
+    width: 100%;
+}
+
+#contentcolumn{
+    margin: 0 120px 0 60px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+}
+
+#leftcolumn{
+    float: left;
+    width: 60px; /*Width of left column*/
+    margin-left: -100%;
+}
+
+#rightcolumn{
+    float: left;
+    width: 100x; /*Width of right column*/
+    margin-left: -100px; /*Set left marginto -(RightColumnWidth)*/
+}
+
+#filter{
+    width: 100%;
+    float: left;
+    height: 30px;
+    background-color: #333333;
+    border-top: 1px solid #555555;
+}
+
+#filter a{
+    color: #888888;
+    font-weight: bold;
+    //text-transform: uppercase;
+    text-decoration: none;
+/*    width: 100%;
+    height: 38px;*/
+}
+
+#filter .active{
+    color: #dddddd;
+    font-weight: bold;
+    //text-transform: uppercase;
+    text-decoration: none;
+}
+
+#filter a:hover{
+    color: #dddddd;
+}
+
+.chia3{
+    border-left: 1px solid #555555;
+	width: 33%;
+	height: 32px;
+	float: left;
+	text-align: center;
+	padding-top: 7px;
+}
+
+#wrapper{
+    width: 100%;
+    float: left;
+}
+
+#wrapper .item{
+    width: 100%;
+    float: left;
+}
+
+.contentwrapper{
+    float: left;
+    width: 100%;
+    height: 86px;
+    border-bottom: 1px solid #cccccc;
+    background-image: linear-gradient(bottom, rgb(244,247,242) 56%, rgb(253,253,252) 91%);
+    background-image: -o-linear-gradient(bottom, rgb(244,247,242) 56%, rgb(253,253,252) 91%);
+    background-image: -moz-linear-gradient(bottom, rgb(244,247,242) 56%, rgb(253,253,252) 91%);
+    background-image: -webkit-linear-gradient(bottom, rgb(244,247,242) 56%, rgb(253,253,252) 91%);
+    background-image: -ms-linear-gradient(bottom, rgb(244,247,242) 56%, rgb(253,253,252) 91%);
+
+    background-image: -webkit-gradient(
+        linear,
+        left bottom,
+        left top,
+        color-stop(0.56, rgb(244,247,242)),
+        color-stop(0.91, rgb(253,253,252))
+    );
+}
+
+.contentcolumn1{
+    margin: 0 90px 0 85px; /*Margins for content column. Should be "0 RightColumnWidth 0 LeftColumnWidth*/
+}
+
+.leftcolumn1{
+    float: left;
+    width: 85px; /*Width of left column*/
+    margin-left: -100%;
+}
+
+.rightcolumn1{
+    float: left;
+    width: 90px; /*Width of right column*/
+    margin-left: -90px; /*Set left marginto -(RightColumnWidth)*/
+}
+
+.song_image{
+    margin-top: 13px;
+    float: left;
+    height: 74px;
+    width: 85px;
+}
+
+.song_image img{
+    width: 75px;
+    height: 60px;
+}
+
+.song_info{
+
+}
+
+.song_info .song_name{
+    font-weight: bold;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.song_info .song_artist{
+    margin-top: 5px;
+    color: #626262;
+}
+
+.song_info .song_download{
+    margin-top: 5px;
+    color: #0064a0;
+}
+
+.song_setringtune{
+
+}
+
+.btn_setup input{
+    height: 30px;
+	width: 85px;
+	border: 1px solid #c7c7c7;
+	border-radius: 6px;
+	color: #616161;
+	margin-top: 24px;
+	background-image: linear-gradient(bottom, rgb(244,244,244) 100%, rgb(230,230,230) 56%);
+	background-image: -o-linear-gradient(bottom, rgb(244,244,244) 100%, rgb(230,230,230) 56%);
+	background-image: -moz-linear-gradient(bottom, rgb(244,244,244) 100%, rgb(230,230,230) 56%);
+	background-image: -webkit-linear-gradient(bottom, rgb(244,244,244) 100%, rgb(230,230,230) 56%);
+	background-image: -ms-linear-gradient(bottom, rgb(244,244,244) 100%, rgb(230,230,230) 56%);
+	background-image: -webkit-gradient( linear, left bottom, left top, color-stop(1, rgb(244,244,244)), color-stop(0.56, rgb(230,230,230)) );
+	line-height: 25px;
+	font-size: 11px;
+	font-weight: bold;
+	padding-left: 6px;
+}
+
+.footer{
+    width: 100%;
+    height: 43px;
+    background: #444444;
+    position: fixed;
+    bottom: 0;
+    color: #FFF;
+    text-align: center;
+}
+
+.footer .chia3_1{
+    width: 33%;
+    height: 43px;
+    float: left;
+    text-align: center;
+    margin-top: 14px;
+}
+.footer a{
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+.innertube{
+    margin: 10px 0 0 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+    margin-top: 0;
+}
+
+.cat_title{
+    background-image: linear-gradient(bottom, rgb(18,18,18) 18%, rgb(67,67,67) 88%);
+    background-image: -o-linear-gradient(bottom, rgb(18,18,18) 18%, rgb(67,67,67) 88%);
+    background-image: -moz-linear-gradient(bottom, rgb(18,18,18) 18%, rgb(67,67,67) 88%);
+    background-image: -webkit-linear-gradient(bottom, rgb(18,18,18) 18%, rgb(67,67,67) 88%);
+    background-image: -ms-linear-gradient(bottom, rgb(18,18,18) 18%, rgb(67,67,67) 88%);
+    background-image: -webkit-gradient( linear, left bottom, left top, color-stop(0.18, rgb(18,18,18)), color-stop(0.88, rgb(67,67,67)) );
+    height: 45px;
+    color: #ffffff;
+    padding-left: 20px;
+    line-height: 43px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cat_items li{
+    height: 52px;
+    background-color: #535353;
+    border-bottom: 1px solid #303030;
+    line-height: 48px;
+}
+
+.cat_items a{
+    color: #aaaaaa;
+    margin-left: 15px;
+    text-decoration: none;
+}
